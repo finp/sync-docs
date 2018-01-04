@@ -1,0 +1,6 @@
+---
+layout: post
+title: Sync Guides
+section: guides
+toc_generate: true
+---

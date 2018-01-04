@@ -1,0 +1,17 @@
+{
+	"name": "sync-docs",
+	"version": "1.0.0",
+	"homepage": "https://github.com/finp/sync-docs#readme",
+	"bugs": {
+		"url": "https://github.com/finp/sync-docs/issues"
+	},
+	"license": "ISC",
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/finp/push-docs.git"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	}
+}
