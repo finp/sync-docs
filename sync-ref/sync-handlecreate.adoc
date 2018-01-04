@@ -1,6 +1,6 @@
 [[fh-sync-handlecreate]]
 == $fh.sync.handleCreate
-{syncnote} xref:fh-sync-handlecreate-dep[section for the old version]
+
 
 Defines a handler function to create a single row of data in the Dataset Backend for a specific Dataset.
 

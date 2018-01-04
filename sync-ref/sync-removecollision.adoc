@@ -1,6 +1,6 @@
 [[fh-sync-removecollision]]
 == $fh.sync.removeCollision
-{syncnote} xref:fh-sync-removecollision-dep[section for the old version]
+
 
 Defines a handler function to delete a collision for a Dataset.
 

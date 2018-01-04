@@ -1,6 +1,6 @@
 [[fh-sync-globalinterceptrequest]]
 == $fh.sync.globalInterceptRequest
-{syncnote} xref:fh-sync-globalinterceptrequest-dep[section for the old version]
+
 
 Intercept all sync requests before they are processed.
 Use this API to check client identities and validating authentication.

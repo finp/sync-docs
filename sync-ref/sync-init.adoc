@@ -2,7 +2,7 @@ include::shared/attributes.adoc[]
 [[fh-sync-init]]
 == $fh.sync.init
 
-{syncnote} xref:fh-sync-init-dep[section for the old version]
+
 
 Set the sync options for the Dataset and start the sync process. This API can also be used to start the sync process on a Dataset.
 

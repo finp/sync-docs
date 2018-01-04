@@ -1,6 +1,6 @@
 [[fh-sync-globalhandleread]]
 == $fh.sync.globalHandleRead
-{syncnote} xref:fh-sync-globalhandleread-dep[section for the old version]
+
 
 
 Defines a global handler function to read a single row of data from the Dataset Backend.

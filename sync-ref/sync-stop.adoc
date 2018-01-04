@@ -1,6 +1,6 @@
 [[fh-sync-stop]]
 == $fh.sync.stop
-{syncnote} xref:fh-sync-stop-dep[section for the old version]
+
 
 Stop the synchronization of a specific Dataset with the Dataset Backend.
 

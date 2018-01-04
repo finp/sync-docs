@@ -1,6 +1,6 @@
 [[fh-sync-handlecollision]]
 == $fh.sync.handleCollision
-{syncnote} xref:fh-sync-handlecollision-dep[section for the old version]
+
 
 Defines a handler function to deal with data collisions for a specific Dataset.
 

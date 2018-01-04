@@ -1,6 +1,6 @@
 [[fh-sync-handlelist]]
 == $fh.sync.handleList
-{syncnote} xref:fh-sync-handlelist-dep[section for the old version]
+
 
 Defines a handler function listing data from the Dataset Backend for a specific Dataset.
 

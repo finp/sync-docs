@@ -2,7 +2,7 @@ include::shared/attributes.adoc[]
 
 [[fh-sync-invoke]]
 == $fh.sync.invoke
-{syncnote} xref:fh-sync-invoke-dep[section for the old version]
+
 
 Invoke internal sync functions of the sync server.
 Typical development does not require you to invoke these functions.

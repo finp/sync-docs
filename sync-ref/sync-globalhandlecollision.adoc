@@ -1,6 +1,6 @@
 [[fh-sync-globalhandlecollision]]
 == $fh.sync.globalHandleCollision
-{syncnote} xref:fh-sync-globalhandlecollision-dep[section for the old version]
+
 
 Defines a global handler function to deal with data collisions.
 

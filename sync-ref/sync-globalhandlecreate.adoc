@@ -1,6 +1,6 @@
 [[fh-sync-globalhandlecreate]]
 == $fh.sync.globalHandleCreate
-{syncnote} xref:fh-sync-globalhandlecreate-dep[section for the old version]
+
 
 
 Defines a global handler function for creating a single row of data in the back end.

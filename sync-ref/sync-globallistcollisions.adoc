@@ -1,6 +1,6 @@
 [[fh-sync-globallistcollisions]]
 == $fh.sync.globalListCollisions
-{syncnote} xref:fh-sync-globallistcollisions-dep[section for the old version]
+
 
 Defines a global handler function to return the current list of collisions.
 

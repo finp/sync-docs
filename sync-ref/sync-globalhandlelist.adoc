@@ -1,6 +1,6 @@
 [[fh-sync-globalhandlelist]]
 == $fh.sync.globalHandleList
-{syncnote} xref:fh-sync-globalhandlelist-dep[section for the old version]
+
 
 Defines a global handler function for listing data from the Dataset Backend.
 

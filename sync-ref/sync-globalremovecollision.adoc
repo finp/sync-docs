@@ -1,6 +1,6 @@
 [[fh-sync-globalremovecollision]]
 == $fh.sync.globalRemoveCollision
-{syncnote} xref:fh-sync-globalremovecollision-dep[section for the old version]
+
 
 Defines a global handler function to delete a collision.
 

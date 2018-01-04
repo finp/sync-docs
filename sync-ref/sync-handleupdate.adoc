@@ -1,6 +1,6 @@
 [[fh-sync-handleupdate]]
 == $fh.sync.handleUpdate
-{syncnote} xref:fh-sync-invoke-dep[section for the old version]
+
 
 Defines a handler function to update a single row of data on the Dataset Backend for a specific Dataset.
 

@@ -1,6 +1,6 @@
 [[fh-sync-globalhandleupdate]]
 == $fh.sync.globalHandleUpdate
-{syncnote} xref:fh-sync-globalhandleupdate-dep[section for the old version]
+
 
 Defines a global handler function to update a single row of data on the Dataset Backend.
 

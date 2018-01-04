@@ -1,6 +1,6 @@
 [[fh-sync-interceptrequest]]
 == $fh.sync.interceptRequest
-{syncnote} xref:fh-sync-interceptrequest-dep[section for the old version]
+
 
 Intercept the sync requests for a specific Dataset before it is processed.
 Use this API to check client identities and validating authentication.

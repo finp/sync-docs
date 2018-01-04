@@ -1,6 +1,6 @@
 [[fh-sync-handleread]]
 == $fh.sync.handleRead
-{syncnote} xref:fh-sync-invoke-dep[section for the old version]
+
 
 Defines a handler function to read a single row of data from the Dataset Backend for a specific Dataset.
 

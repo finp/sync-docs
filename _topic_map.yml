@@ -24,21 +24,21 @@
 Name: Sync User Guide
 Dir: sync-dev
 Topics:
-  - Name: overview
+  - Name: Overview
     File: sync_overview
-  - Name: terminology
+  - Name: Terminology
     File: sync_terminology
-  - Name: server_architecture
+  - Name: Server architecture
     File: sync_server_architecture
-  - Name: configuration_guide
+  - Name: Configuration guide
     File: sync_configuration_guide
-  - Name: upgrade_guide
+  - Name: Upgrade guide
     File: sync_upgrade_guide
-  - Name: performance_scaling_guide
+  - Name: Performance guide
     File: sync_performance_scaling_guide
-  - Name: collections
+  - Name: Collections
     File: sync_collections
-  - Name: debugging_guide
+  - Name: Debugging guide
     File: sync_debugging_guide
 ---
 Name: Sync API Guide

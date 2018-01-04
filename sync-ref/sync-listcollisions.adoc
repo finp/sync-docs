@@ -1,6 +1,6 @@
 [[fh-sync-listcollisions]]
 == $fh.sync.listCollisions
-{syncnote} xref:fh-sync-invoke-dep[section for the old version]
+
 
 Defines a handler function to return the current list of collisions for a Dataset.
 
