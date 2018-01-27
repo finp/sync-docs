@@ -36,8 +36,8 @@ fi
 #cp -a "../${siteSource}/." .
 cd ~/docs
 asciibinder build
-mv ~/docs/_preview/aerogear ~/gh-pages-branch
-cd ~/gh-pages-branch 
+mv ~/docs/_preview/sync ~/gh-pages-branch
+cd ~/gh-pages-branch
 
 # stage any changes and new files
 git add -A
