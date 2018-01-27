@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>aerogear Latest | Sync API Guide | setconfig</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <link href="../../latest/_stylesheets/asciibinder.css" rel="stylesheet" />
+
+   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+   <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+   <![endif]-->
+
+  <link href="../../latest/_images/favicon32x32.png" rel="shortcut icon" type="text/css">
+  <!--[if IE]><link rel="shortcut icon" href="../../latest/_images/favicon.ico"><![endif]-->
+  <meta content="Red Hat" name="application-name">
+</head>
+<body>
+  <div class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="https://aerogear.org/"><img alt="Build Farm" src="../../latest/_images/aerogear_logo_200px.png"></a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <p class="toggle-nav visible-xs pull-left">
+      <button class="btn btn-default btn-sm" type="button" data-toggle="offcanvas">Toggle nav</button>
+    </p>
+    <ol class="breadcrumb">
+      <li class="sitename">
+        <a href="../../index.html">AeroGear</a>
+      </li>
+      <li class="hidden-xs active">
+        <a href="../sync-dev/sync_overview.html">aerogear Latest</a>
+      </li>
+      <li class="hidden-xs active">
+        <a href="../sync-ref/sync.html">Sync API Guide</a>
+      </li>
+      
+      <li class="hidden-xs active">
+        setconfig
+      </li>
+    </ol>
+    <div class="row row-offcanvas row-offcanvas-left">
+      <div class="col-xs-8 col-sm-3 col-md-3 sidebar sidebar-offcanvas">
+        <ul class="nav nav-sidebar">
+    <li class="nav-header">
+      <a class="" href="#" data-toggle="collapse" data-target="#topicGroup0">
+        <span id="tgSpan0" class="fa fa-angle-right"></span>Sync User Guide
+      </a>
+      <ul id="topicGroup0" class="collapse  list-unstyled">
+            <li><a class="" href="../sync-dev/sync_overview.html">Overview</a></li>
+            <li><a class="" href="../sync-dev/sync_terminology.html">Terminology</a></li>
+            <li><a class="" href="../sync-dev/sync_server_architecture.html">Server architecture</a></li>
+            <li><a class="" href="../sync-dev/sync_configuration_guide.html">Configuration guide</a></li>
+            <li><a class="" href="../sync-dev/sync_upgrade_guide.html">Upgrade guide</a></li>
+            <li><a class="" href="../sync-dev/sync_performance_scaling_guide.html">Performance guide</a></li>
+            <li><a class="" href="../sync-dev/sync_collections.html">Collections</a></li>
+            <li><a class="" href="../sync-dev/sync_debugging_guide.html">Debugging guide</a></li>
+      </ul>
+    </li>
+    <li class="nav-header">
+      <a class="" href="#" data-toggle="collapse" data-target="#topicGroup1">
+        <span id="tgSpan1" class="fa fa-angle-down"></span>Sync API Guide
+      </a>
+      <ul id="topicGroup1" class="collapse in list-unstyled">
+            <li><a class="" href="../sync-ref/sync.html">sync</a></li>
+            <li><a class="" href="../sync-ref/sync-connect.html">connect</a></li>
+            <li><a class="" href="../sync-ref/sync-geteventemitter.html">geteventemitter</a></li>
+            <li><a class="" href="../sync-ref/sync-globalhandlecollision.html">globalhandlecollision</a></li>
+            <li><a class="" href="../sync-ref/sync-globalhandlecreate.html">globalhandlecreate</a></li>
+            <li><a class="" href="../sync-ref/sync-globalhandledelete.html">globalhandledelete</a></li>
+            <li><a class="" href="../sync-ref/sync-globalhandlelist.html">globalhandlelist</a></li>
+            <li><a class="" href="../sync-ref/sync-globalhandleread.html">globalhandleread</a></li>
+            <li><a class="" href="../sync-ref/sync-globalhandleupdate.html">globalhandleupdate</a></li>
+            <li><a class="" href="../sync-ref/sync-globalinterceptrequest.html">globalinterceptrequest</a></li>
+            <li><a class="" href="../sync-ref/sync-globallistcollisions.html">globallistcollisions</a></li>
+            <li><a class="" href="../sync-ref/sync-globalremovecollision.html">globalremovecollision</a></li>
+            <li><a class="" href="../sync-ref/sync-handlecollision.html">handlecollision</a></li>
+            <li><a class="" href="../sync-ref/sync-handlecreate.html">handlecreate</a></li>
+            <li><a class="" href="../sync-ref/sync-handledelete.html">handledelete</a></li>
+            <li><a class="" href="../sync-ref/sync-handlelist.html">handlelist</a></li>
+            <li><a class="" href="../sync-ref/sync-handleread.html">handleread</a></li>
+            <li><a class="" href="../sync-ref/sync-handleupdate.html">handleupdate</a></li>
+            <li><a class="" href="../sync-ref/sync-init.html">init</a></li>
+            <li><a class="" href="../sync-ref/sync-interceptrequest.html">interceptrequest</a></li>
+            <li><a class="" href="../sync-ref/sync-invoke.html">invoke</a></li>
+            <li><a class="" href="../sync-ref/sync-listcollisions.html">listcollisions</a></li>
+            <li><a class="" href="../sync-ref/sync-removecollision.html">removecollision</a></li>
+            <li><a class=" active" href="../sync-ref/sync-setconfig.html">setconfig</a></li>
+            <li><a class="" href="../sync-ref/sync-setglobalhashfn.html">setglobalhashfn</a></li>
+            <li><a class="" href="../sync-ref/sync-setrecordhashfn.html">setrecordhashfn</a></li>
+            <li><a class="" href="../sync-ref/sync-stop.html">stop</a></li>
+            <li><a class="" href="../sync-ref/sync-stopall.html">stopall</a></li>
+            <li><a class="" href="../sync-ref/sync-toc.html">toc</a></li>
+      </ul>
+    </li>
+</ul>
+      </div>
+      <div class="col-xs-12 col-sm-9 col-md-9 main">
+        <div class="page-header">
+          <h2>$fh.sync.setConfig</h2>
+        </div>
+        <div class="sect1">
+<h2 id="fh-sync-setconfig"><a class="anchor" href="#fh-sync-setconfig"></a>$fh.sync.setConfig</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Configure the sync server.</p>
+</div>
+<div class="paragraph">
+<p>Call this API when the sync server is ready, but before initialising any of the datasets.
+Initialisation of a Dataset typically happens when the first Sync client connects, unless you have explicit calls to <code>sync.init</code>.
+Either way, a reasonable location to call <code>setConfig</code> is when the <code>sync:ready</code> event triggers.</p>
+</div>
+<div class="sect2">
+<h3 id="usage"><a class="anchor" href="#usage"></a>Usage</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="javascript"><span style="color:#369;font-weight:bold">$fh</span>.sync.setConfig(options)</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="parameters"><a class="anchor" href="#parameters"></a>Parameters</h3>
+<div class="sect3">
+<h4 id="options"><a class="anchor" href="#options"></a>options</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Description: Configuration options for the sync server</p>
+</li>
+<li>
+<p>Type: Object</p>
+</li>
+<li>
+<p>Supported Keys</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>pendingWorkerInterval</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Description: Set the interval value for the pending workers, in milliseconds.
+For more details about the worker interval, see the <a href="{ServerSideDeveloperGuide}#sync_configuration_guide">Data Sync Configuration Guide</a>.</p>
+</li>
+<li>
+<p>Type: Number</p>
+</li>
+<li>
+<p>Default: 1</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>pendingWorkerBackoff</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Description: Specify the backoff strategy for the pending workers.
+For more details about the worker backoff, see the <a href="{ServerSideDeveloperGuide}#sync_configuration_guide">Data Sync Configuration Guide</a>.</p>
+</li>
+<li>
+<p>Type: Object</p>
+</li>
+<li>
+<p>Default: <em>{strategy: 'exp', max: 60000}</em></p>
+<div class="ulist">
+<ul>
+<li>
+<p>strategy</p>
+<div class="paragraph">
+<p>Define the backoff strategy.
+Valid values are <code>exp</code> (exponential) and <code>fib</code> (fibonacci).
+Setting the value to anything else disables worker backoff.</p>
+</div>
+</li>
+<li>
+<p>max</p>
+<div class="paragraph">
+<p>The max delay time for the backoff strategy, in milliseconds.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>pendingWorkerConcurrency</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Description: Set the number of concurrent pending workers.
+Set it to 0 will disable the pending workers.</p>
+</li>
+<li>
+<p>Type: Number</p>
+</li>
+<li>
+<p>Default: 1</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>ackWorkerInterval</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Description: Set the interval value for the ack workers, in milliseconds.
+For more details about the worker interval, see the <a href="{ServerSideDeveloperGuide}#sync_configuration_guide">Data Sync Configuration Guide</a>.</p>
+</li>
+<li>
+<p>Type: Number</p>
+</li>
+<li>
+<p>Default: 1</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>ackWorkerBackoff</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Description: Specify the backoff strategy for the ack workers.
+For more details about the worker backoff, see the <a href="{ServerSideDeveloperGuide}#sync_configuration_guide">Data Sync Configuration Guide</a>.</p>
+</li>
+<li>
+<p>Type: Object</p>
+</li>
+<li>
+<p>Default: <em>{strategy: 'exp', max: 60000}</em></p>
+<div class="ulist">
+<ul>
+<li>
+<p>strategy</p>
+<div class="paragraph">
+<p>Define the backoff strategy.
+Valid values are <code>exp</code> (exponential) and <code>fib</code> (fibonacci).
+Setting it to anything else disables the backoff strategy for the ack workers.</p>
+</div>
+</li>
+<li>
+<p>max</p>
+<div class="paragraph">
+<p>The max delay time for the backoff strategy, in milliseconds.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>ackWorkerConcurrency</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Description: Set the number of concurrent ack workers.
+Setting it to 0 disables the ack workers.</p>
+</li>
+<li>
+<p>Type: Number</p>
+</li>
+<li>
+<p>Default: 1</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>syncWorkerInterval</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Description: Set the interval value for the sync workers, in milliseconds.
+For more details about the worker interval, see the <a href="{ServerSideDeveloperGuide}#sync_configuration_guide">Data Sync Configuration Guide</a>.</p>
+</li>
+<li>
+<p>Type: Number</p>
+</li>
+<li>
+<p>Default: 100</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>syncWorkerBackoff</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Description: Specify the backoff strategy for the sync workers.
+For more details about the worker backoff, see the <a href="{ServerSideDeveloperGuide}#sync_configuration_guide">Data Sync Configuration Guide</a>.</p>
+</li>
+<li>
+<p>Type: Object</p>
+</li>
+<li>
+<p>Default: <em>{strategy: 'none'}</em></p>
+<div class="ulist">
+<ul>
+<li>
+<p>strategy</p>
+<div class="paragraph">
+<p>Define the backoff strategy.
+Valid values are <code>exp</code> (exponential) and <code>fib</code> (fibonacci).
+Setting it to anything else disables the backoff strategy.</p>
+</div>
+</li>
+<li>
+<p>max</p>
+<div class="paragraph">
+<p>The max delay time for the backoff strategy, in milliseconds.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>syncWorkerConcurrency</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Description: Set the number of concurrent sync workers.
+Setting it to 0 disables the sync workers.</p>
+</li>
+<li>
+<p>Type: Number</p>
+</li>
+<li>
+<p>Default: 1</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>collectStats</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Description: Determine if the sync server collects performance stats data.</p>
+<div class="paragraph">
+<p>By default, the sync server collects some performance data, for example, db operation timing, API timing, queue size.</p>
+</div>
+<div class="paragraph">
+<p>The stats data is stored in Redis and has minimum performance overhead.</p>
+</div>
+</li>
+<li>
+<p>Type: Boolean</p>
+</li>
+<li>
+<p>Default: true</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>statsRecordsToKeep</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Description: Determine how many stats data points to save for each metric series in Redis.</p>
+</li>
+<li>
+<p>Type: Number</p>
+</li>
+<li>
+<p>Default: 1000</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>collectStatsInterval</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Description: Determine how often the stats should be collected, in milliseconds.</p>
+</li>
+<li>
+<p>Type: Number</p>
+</li>
+<li>
+<p>Default: 5000</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>metricsInfluxdbHost</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Description: Specify the InfluxDB host to which the sync server sends performance data.</p>
+</li>
+<li>
+<p>Type: String</p>
+</li>
+<li>
+<p>Default: null</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>metricsInfluxdbPort</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Description: Specify the InfluxDB port. It must be a UDP port.</p>
+</li>
+<li>
+<p>Type: Number</p>
+</li>
+<li>
+<p>Default: null</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>queueMessagesTTL</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Description: The time to live value for the queue messages that are marked for deletion. The messages are removed from the database once TTL value is reached. In seconds.</p>
+</li>
+<li>
+<p>Type: Number</p>
+</li>
+<li>
+<p>Default: 86400 (1 day)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>datasetClientCleanerRetentionPeriod</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Description: Specify how long an inactive datasetClient is kept in the database before it is deleted.</p>
+<div class="paragraph">
+<p>To avoid unnessary deletion of datasetClients, consider overriding this configuration with a value that is appropriate for the app.
+For example, if there is no user using the app during the weekend, you could set this value to '96h'.</p>
+</div>
+</li>
+<li>
+<p>Type: String</p>
+</li>
+<li>
+<p>Default: '24h'</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Other supported units including: <em>s</em> (second), <em>m</em> (minute), <em>h</em> (hour), <em>d</em> (day), <em>w</em> (week), <em>y</em> (year)</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>datasetClientCleanerCheckFrequency</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Description: Specify how often the datasetClient cleaner job runs.</p>
+</li>
+<li>
+<p>Type: String</p>
+</li>
+<li>
+<p>Default: '1h'</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>useCache</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Description: Specify if Redis is used to cache the records of a Dataset Client.</p>
+<div class="paragraph">
+<p>When enabled, it should reduce the number of requests on the database, and reduce the time of the <code>syncRecords</code> API call.</p>
+</div>
+<div class="paragraph">
+<p>It is an experimental feature and may cause delay for changes to be visible to all clients.</p>
+</div>
+</li>
+<li>
+<p>Type: Boolean</p>
+</li>
+<li>
+<p>Default: false</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>schedulerInterval</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Description: set the interval for the sync scheduler, in milliseconds.</p>
+<div class="paragraph">
+<p>Typically, you do not need to change the value.</p>
+</div>
+</li>
+<li>
+<p>Type: Number</p>
+</li>
+<li>
+<p>Default: 500</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>schedulerLockName</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Description:  A lock is used to make sure that only 1 sync scheduler can run at any given time.
+This field determines the name of that lock.</p>
+<div class="paragraph">
+<p>Typically, you do not need to change the value.</p>
+</div>
+</li>
+<li>
+<p>Type: String</p>
+</li>
+<li>
+<p>Default: <em>locks:sync:SyncScheduler</em></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>schedulerLockMaxTime</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Description: A lock is used to make sure that only 1 sync scheduler can run at any given time.
+This field determines the maximum time the sync scheduler can hold the lock for.
+This is to prevent the sync scheduler from holding the lock forever (for example, if the process crashes).</p>
+<div class="paragraph">
+<p>Typically, you do not need to change the value.</p>
+</div>
+</li>
+<li>
+<p>Type: Number</p>
+</li>
+<li>
+<p>Default: 20000</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>datasetClientUpdateConcurrency</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Description: When there are a lot concurrent sync requests to the sync server, a lot of update operations to the Dataset Clients are generated.
+To avoid overloading the database, those operations are queued and then performed with the concurrency of this option.</p>
+<div class="paragraph">
+<p>Typically, you do not need to change the value.</p>
+</div>
+</li>
+<li>
+<p>Type: Number</p>
+</li>
+<li>
+<p>Default: 10</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="example"><a class="anchor" href="#example"></a>Example</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="javascript"><span style="color:#369;font-weight:bold">$fh</span>.events.on(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">sync:ready</span><span style="color:#710">'</span></span>, <span style="color:#080;font-weight:bold">function</span>(){
+  <span style="color:#080;font-weight:bold">var</span> pendingWorkerInterval = process.env.PENDING_WORKER_INTERVAL || <span style="color:#00D">500</span>;
+  <span style="color:#080;font-weight:bold">var</span> syncWorkerInterval = process.env.SYNC_WORKER_INTERVAL || <span style="color:#00D">500</span>;
+  <span style="color:#080;font-weight:bold">var</span> ackWorkerInterval = process.env.ACK_WORKER_INTERVAL || <span style="color:#00D">500</span>;
+  <span style="color:#080;font-weight:bold">var</span> useCache = process.env.USE_CACHE === <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">true</span><span style="color:#710">'</span></span>;
+  <span style="color:#080;font-weight:bold">var</span> syncConfig = {
+    <span style="color:#606">pendingWorkerInterval</span>: parseInt(pendingWorkerInterval),
+    <span style="color:#606">ackWorkerInterval</span>: parseInt(ackWorkerInterval),
+    <span style="color:#606">syncWorkerInterval</span>: parseInt(syncWorkerInterval),
+    <span style="color:#606">collectStatsInterval</span>: <span style="color:#00D">4000</span>,
+    <span style="color:#606">metricsInfluxdbHost</span>: process.env.METRICS_HOST,
+    <span style="color:#606">metricsInfluxdbPort</span>: parseInt(process.env.METRICS_PORT),
+    <span style="color:#606">useCache</span>: useCache
+  };
+  <span style="color:#369;font-weight:bold">$fh</span>.sync.setConfig(syncConfig);
+});</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+      </div>
+    </div>
+  </div>
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <!-- Latest compiled and minified JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   <script src="../../latest/_javascripts/bootstrap-offcanvas.js" type="text/javascript"></script>
+   <script type="text/javascript">
+    /*<![CDATA[*/
+    $(document).ready(function() {
+      $("[id^='topicGroup']").on('show.bs.collapse', function (event) {
+        if (!($(event.target).attr('id').match(/^topicSubGroup/))) {
+          $(this).parent().find("[id^='tgSpan']").toggleClass("fa-angle-right fa-angle-down");
+        }
+      });
+      $("[id^='topicGroup']").on('hide.bs.collapse', function (event) {
+        if (!($(event.target).attr('id').match(/^topicSubGroup/))) {
+          $(this).parent().find("[id^='tgSpan']").toggleClass("fa-angle-right fa-angle-down");
+        }
+      });
+      $("[id^='topicSubGroup']").on('show.bs.collapse', function () {
+        $(this).parent().find("[id^='sgSpan']").toggleClass("fa-caret-right fa-caret-down");
+      });
+      $("[id^='topicSubGroup']").on('hide.bs.collapse', function () {
+        $(this).parent().find("[id^='sgSpan']").toggleClass("fa-caret-right fa-caret-down");
+      });
+    });
+    /*]]>*/
+  </script>
+</body>
+</html>

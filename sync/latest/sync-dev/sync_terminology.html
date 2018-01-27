@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>aerogear Latest | Sync User Guide | Terminology</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <link href="../../latest/_stylesheets/asciibinder.css" rel="stylesheet" />
+
+   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+   <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+   <![endif]-->
+
+  <link href="../../latest/_images/favicon32x32.png" rel="shortcut icon" type="text/css">
+  <!--[if IE]><link rel="shortcut icon" href="../../latest/_images/favicon.ico"><![endif]-->
+  <meta content="Red Hat" name="application-name">
+</head>
+<body>
+  <div class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="https://aerogear.org/"><img alt="Build Farm" src="../../latest/_images/aerogear_logo_200px.png"></a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <p class="toggle-nav visible-xs pull-left">
+      <button class="btn btn-default btn-sm" type="button" data-toggle="offcanvas">Toggle nav</button>
+    </p>
+    <ol class="breadcrumb">
+      <li class="sitename">
+        <a href="../../index.html">AeroGear</a>
+      </li>
+      <li class="hidden-xs active">
+        <a href="../sync-dev/sync_overview.html">aerogear Latest</a>
+      </li>
+      <li class="hidden-xs active">
+        <a href="../sync-dev/sync_overview.html">Sync User Guide</a>
+      </li>
+      
+      <li class="hidden-xs active">
+        Terminology
+      </li>
+    </ol>
+    <div class="row row-offcanvas row-offcanvas-left">
+      <div class="col-xs-8 col-sm-3 col-md-3 sidebar sidebar-offcanvas">
+        <ul class="nav nav-sidebar">
+    <li class="nav-header">
+      <a class="" href="#" data-toggle="collapse" data-target="#topicGroup0">
+        <span id="tgSpan0" class="fa fa-angle-down"></span>Sync User Guide
+      </a>
+      <ul id="topicGroup0" class="collapse in list-unstyled">
+            <li><a class="" href="../sync-dev/sync_overview.html">Overview</a></li>
+            <li><a class=" active" href="../sync-dev/sync_terminology.html">Terminology</a></li>
+            <li><a class="" href="../sync-dev/sync_server_architecture.html">Server architecture</a></li>
+            <li><a class="" href="../sync-dev/sync_configuration_guide.html">Configuration guide</a></li>
+            <li><a class="" href="../sync-dev/sync_upgrade_guide.html">Upgrade guide</a></li>
+            <li><a class="" href="../sync-dev/sync_performance_scaling_guide.html">Performance guide</a></li>
+            <li><a class="" href="../sync-dev/sync_collections.html">Collections</a></li>
+            <li><a class="" href="../sync-dev/sync_debugging_guide.html">Debugging guide</a></li>
+      </ul>
+    </li>
+    <li class="nav-header">
+      <a class="" href="#" data-toggle="collapse" data-target="#topicGroup1">
+        <span id="tgSpan1" class="fa fa-angle-right"></span>Sync API Guide
+      </a>
+      <ul id="topicGroup1" class="collapse  list-unstyled">
+            <li><a class="" href="../sync-ref/sync.html">sync</a></li>
+            <li><a class="" href="../sync-ref/sync-connect.html">connect</a></li>
+            <li><a class="" href="../sync-ref/sync-geteventemitter.html">geteventemitter</a></li>
+            <li><a class="" href="../sync-ref/sync-globalhandlecollision.html">globalhandlecollision</a></li>
+            <li><a class="" href="../sync-ref/sync-globalhandlecreate.html">globalhandlecreate</a></li>
+            <li><a class="" href="../sync-ref/sync-globalhandledelete.html">globalhandledelete</a></li>
+            <li><a class="" href="../sync-ref/sync-globalhandlelist.html">globalhandlelist</a></li>
+            <li><a class="" href="../sync-ref/sync-globalhandleread.html">globalhandleread</a></li>
+            <li><a class="" href="../sync-ref/sync-globalhandleupdate.html">globalhandleupdate</a></li>
+            <li><a class="" href="../sync-ref/sync-globalinterceptrequest.html">globalinterceptrequest</a></li>
+            <li><a class="" href="../sync-ref/sync-globallistcollisions.html">globallistcollisions</a></li>
+            <li><a class="" href="../sync-ref/sync-globalremovecollision.html">globalremovecollision</a></li>
+            <li><a class="" href="../sync-ref/sync-handlecollision.html">handlecollision</a></li>
+            <li><a class="" href="../sync-ref/sync-handlecreate.html">handlecreate</a></li>
+            <li><a class="" href="../sync-ref/sync-handledelete.html">handledelete</a></li>
+            <li><a class="" href="../sync-ref/sync-handlelist.html">handlelist</a></li>
+            <li><a class="" href="../sync-ref/sync-handleread.html">handleread</a></li>
+            <li><a class="" href="../sync-ref/sync-handleupdate.html">handleupdate</a></li>
+            <li><a class="" href="../sync-ref/sync-init.html">init</a></li>
+            <li><a class="" href="../sync-ref/sync-interceptrequest.html">interceptrequest</a></li>
+            <li><a class="" href="../sync-ref/sync-invoke.html">invoke</a></li>
+            <li><a class="" href="../sync-ref/sync-listcollisions.html">listcollisions</a></li>
+            <li><a class="" href="../sync-ref/sync-removecollision.html">removecollision</a></li>
+            <li><a class="" href="../sync-ref/sync-setconfig.html">setconfig</a></li>
+            <li><a class="" href="../sync-ref/sync-setglobalhashfn.html">setglobalhashfn</a></li>
+            <li><a class="" href="../sync-ref/sync-setrecordhashfn.html">setrecordhashfn</a></li>
+            <li><a class="" href="../sync-ref/sync-stop.html">stop</a></li>
+            <li><a class="" href="../sync-ref/sync-stopall.html">stopall</a></li>
+            <li><a class="" href="../sync-ref/sync-toc.html">toc</a></li>
+      </ul>
+    </li>
+</ul>
+      </div>
+      <div class="col-xs-12 col-sm-9 col-md-9 main">
+        <div class="page-header">
+          <h2>Sync Terminology</h2>
+        </div>
+        <div class="sect1">
+<h2 id="sync-protocol"><a class="anchor" href="#sync-protocol"></a>Sync Protocol</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The protocol for communication between the <a href="#sync-client">Sync Client</a> and the <a href="#sync-server">Sync Server</a>.<br></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="sync-server"><a class="anchor" href="#sync-server"></a>Sync Server</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Sync Server is the server part of the
+<a href="#sync-protocol">Sync Protocol</a>, and is included in the fh-mbaas-api module. It:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>exposes the <a href="{CloudAPI}#fh-sync">Sync Server API</a> for integrating with a <a href="#dataset-backend">DataSet Backend</a></p>
+</li>
+<li>
+<p>runs the <a href="#sync-server-loop">Sync Server Loop</a>, updating <a href="#dataset">DataSets</a> when updates from a DataSet Backend are detected.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="sync-client"><a class="anchor" href="#sync-client"></a>Sync Client</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>exposes the <a href="{ClientAPI}#fh-sync">Sync Client API</a> to the front end for CRUDL actions against a <a href="#dataset">DataSet</a></p>
+</li>
+<li>
+<p>runs the <a href="#sync-client-loop">Sync Client Loop</a>, making a call to the <a href="#sync-server">Sync Server</a> at the specified <a href="#sync-frequency">Sync Frequency</a> for a particular <a href="#dataset">DataSet</a>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The Sync Client is the client part of the <a href="#sync-protocol">Sync Protocol</a>
+There are 3 Sync Client implementations available:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Javascript, in the
+<a href="https://github.com/feedhenry/fh-sync-js/blob/master/src/sync-client.js">FeedHenry Javascript SDK</a></p>
+</li>
+<li>
+<p>Objective C, in the
+<a href="https://github.com/feedhenry/fh-ios-sdk/tree/master/fh-ios-sdk/Sync">FeedHenry iOS SDK</a></p>
+</li>
+<li>
+<p>Java, in the
+<a href="https://github.com/feedhenry/fh-android-sdk">FeedHenry Android SDK</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="sync-server-loop"><a class="anchor" href="#sync-server-loop"></a>Sync Server Loop</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Sync Server Loop is a function that runs continuously on the
+<a href="#sync-server">Sync Server</a> with a 500ms wait between each run.<br>
+During each run, it iterates over all <a href="#dataset-client">DataSet Clients</a> to
+see if a <a href="#dataset">DataSet</a> should be synced from the
+<a href="#dataset-backend">DataSet Backend</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="sync-client-loop"><a class="anchor" href="#sync-client-loop"></a>Sync Client Loop</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Sync Client Loop is a function that runs continuously on the
+<a href="#sync-client">Sync Client</a> with a 500ms wait between each run.<br>
+During each run, it iterates over all <a href="#dataset-client">DataSet Clients</a> to
+see if a <a href="#dataset">DataSet</a> should be synced with the
+<a href="#sync-server">Sync Server</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="sync-frequency"><a class="anchor" href="#sync-frequency"></a>Sync Frequency</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>On the <a href="#sync-client">Sync Client</a>, this is the interval between checks
+for updates from the <a href="#sync-server">Sync Server</a> for a particular
+<a href="#dataset">DataSet</a>.<br>
+On the <a href="#sync-server">Sync Server</a>, this is the interval between checks
+for updates from the <a href="#dataset-backend">DataSet Backend</a> for a
+particular <a href="#dataset">DataSet</a>.</p>
+</div>
+<div class="paragraph">
+<p>For more information, see <a href="#configuring-sync-frequency">Configuring Sync Frequency</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="dataset"><a class="anchor" href="#dataset"></a>DataSet</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A DataSet is a collection of records synchronized between 1 or
+more <a href="#sync-client">Sync Clients</a>, the <a href="#sync-server">Sync Server</a>
+and the <a href="#dataset-backend">DataSet Backend</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="dataset-backend"><a class="anchor" href="#dataset-backend"></a>DataSet Backend</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The system of record for data synchronized between the
+<a href="#sync-client">Sync Client</a> and the <a href="#sync-server">Sync Server</a>.<br>
+It can be any system that provides an API and can be integrated with
+from the <a href="#sync-server">Sync Server</a>, for example, a mysql database or a SOAP
+service.<br>
+The Sync Server exposes the <a href="{CloudAPI}#fh-sync">Sync Server API</a>
+for integration with a DataSet Backend using <a href="#dataset-handler">DataSet
+Handlers</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="dataset-handler"><a class="anchor" href="#dataset-handler"></a>DataSet Handler</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A DataSet Handler is a function for integrating the
+<a href="#sync-server">Sync Server</a> into a <a href="#dataset-backend">DataSet
+Backend</a>.<br>
+There are many handlers for doing CRUDL actions on a
+<a href="#dataset">DataSet</a> and managing collisions between
+<a href="#dataset-record">DataSet Records</a>.<br>
+The default implementation of these handlers uses fh.db (MongoDB backed
+in an RHMAP MBaaS).<br>
+You can override each of these handlers. See the
+<a href="{CloudAPI}#fh-sync">Sync Server API</a> for details.</p>
+</div>
+<div class="paragraph">
+<p><strong>IMPORTANT</strong>: If you are overriding handlers, Red Hat recommends overriding
+<em>all</em> handlers to avoid unusual behavior with some handlers
+using the default implementation and others using an overridden
+implementation.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="dataset-client"><a class="anchor" href="#dataset-client"></a>DataSet Client</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A DataSet Client is a configuration stored in the <a href="#sync-client">Sync
+Client</a> &amp; <a href="#sync-server">Sync Server</a> for each <a href="#dataset">DataSet</a>
+that is actively syncing between the client &amp; server.<br>
+It contains data such as:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>the <a href="#sync-frequency">Sync Frequency</a> of the <a href="#dataset">DataSet</a></p>
+</li>
+<li>
+<p>any query parameters to include when making calls to the
+<a href="#dataset-backend">DataSet Backend</a></p>
+</li>
+<li>
+<p>the latest <a href="#hash">Hash</a> of the <a href="#dataset-record">DataSet
+Records</a></p>
+</li>
+<li>
+<p>data regarding whether a sync with the <a href="#dataset-backend">DataSet Backend</a> is currently
+in progress</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="dataset-record"><a class="anchor" href="#dataset-record"></a>DataSet Record</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A DataSet Record is an individual record in a <a href="#dataset">DataSet</a>.<br>
+It contains:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>the raw data that this record represents, for example, the row values from a
+MySQL table</p>
+</li>
+<li>
+<p>a <a href="#hash">Hash</a> of the raw data</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="hash"><a class="anchor" href="#hash"></a>Hash</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There are 2 types of Hash used in the Sync Protocol:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>hash of an individual <a href="#dataset-record">DataSet Record</a> which is used to compare individual records to see if they are different.</p>
+</li>
+<li>
+<p>hash of all <a href="#dataset-record">DataSet Records</a> for a particular
+<a href="#dataset-client">DataSet Client</a> which is used to compare a client&#8217;s set of records with the servers without iterating over all records.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+      </div>
+    </div>
+  </div>
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <!-- Latest compiled and minified JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   <script src="../../latest/_javascripts/bootstrap-offcanvas.js" type="text/javascript"></script>
+   <script type="text/javascript">
+    /*<![CDATA[*/
+    $(document).ready(function() {
+      $("[id^='topicGroup']").on('show.bs.collapse', function (event) {
+        if (!($(event.target).attr('id').match(/^topicSubGroup/))) {
+          $(this).parent().find("[id^='tgSpan']").toggleClass("fa-angle-right fa-angle-down");
+        }
+      });
+      $("[id^='topicGroup']").on('hide.bs.collapse', function (event) {
+        if (!($(event.target).attr('id').match(/^topicSubGroup/))) {
+          $(this).parent().find("[id^='tgSpan']").toggleClass("fa-angle-right fa-angle-down");
+        }
+      });
+      $("[id^='topicSubGroup']").on('show.bs.collapse', function () {
+        $(this).parent().find("[id^='sgSpan']").toggleClass("fa-caret-right fa-caret-down");
+      });
+      $("[id^='topicSubGroup']").on('hide.bs.collapse', function () {
+        $(this).parent().find("[id^='sgSpan']").toggleClass("fa-caret-right fa-caret-down");
+      });
+    });
+    /*]]>*/
+  </script>
+</body>
+</html>

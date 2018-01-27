@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>aerogear Latest | Sync User Guide | Overview</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <link href="../../latest/_stylesheets/asciibinder.css" rel="stylesheet" />
+
+   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+   <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+   <![endif]-->
+
+  <link href="../../latest/_images/favicon32x32.png" rel="shortcut icon" type="text/css">
+  <!--[if IE]><link rel="shortcut icon" href="../../latest/_images/favicon.ico"><![endif]-->
+  <meta content="Red Hat" name="application-name">
+</head>
+<body>
+  <div class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="https://aerogear.org/"><img alt="Build Farm" src="../../latest/_images/aerogear_logo_200px.png"></a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <p class="toggle-nav visible-xs pull-left">
+      <button class="btn btn-default btn-sm" type="button" data-toggle="offcanvas">Toggle nav</button>
+    </p>
+    <ol class="breadcrumb">
+      <li class="sitename">
+        <a href="../../index.html">AeroGear</a>
+      </li>
+      <li class="hidden-xs active">
+        <a href="../sync-dev/sync_overview.html">aerogear Latest</a>
+      </li>
+      <li class="hidden-xs active">
+        <a href="../sync-dev/sync_overview.html">Sync User Guide</a>
+      </li>
+      
+      <li class="hidden-xs active">
+        Overview
+      </li>
+    </ol>
+    <div class="row row-offcanvas row-offcanvas-left">
+      <div class="col-xs-8 col-sm-3 col-md-3 sidebar sidebar-offcanvas">
+        <ul class="nav nav-sidebar">
+    <li class="nav-header">
+      <a class="" href="#" data-toggle="collapse" data-target="#topicGroup0">
+        <span id="tgSpan0" class="fa fa-angle-down"></span>Sync User Guide
+      </a>
+      <ul id="topicGroup0" class="collapse in list-unstyled">
+            <li><a class=" active" href="../sync-dev/sync_overview.html">Overview</a></li>
+            <li><a class="" href="../sync-dev/sync_terminology.html">Terminology</a></li>
+            <li><a class="" href="../sync-dev/sync_server_architecture.html">Server architecture</a></li>
+            <li><a class="" href="../sync-dev/sync_configuration_guide.html">Configuration guide</a></li>
+            <li><a class="" href="../sync-dev/sync_upgrade_guide.html">Upgrade guide</a></li>
+            <li><a class="" href="../sync-dev/sync_performance_scaling_guide.html">Performance guide</a></li>
+            <li><a class="" href="../sync-dev/sync_collections.html">Collections</a></li>
+            <li><a class="" href="../sync-dev/sync_debugging_guide.html">Debugging guide</a></li>
+      </ul>
+    </li>
+    <li class="nav-header">
+      <a class="" href="#" data-toggle="collapse" data-target="#topicGroup1">
+        <span id="tgSpan1" class="fa fa-angle-right"></span>Sync API Guide
+      </a>
+      <ul id="topicGroup1" class="collapse  list-unstyled">
+            <li><a class="" href="../sync-ref/sync.html">sync</a></li>
+            <li><a class="" href="../sync-ref/sync-connect.html">connect</a></li>
+            <li><a class="" href="../sync-ref/sync-geteventemitter.html">geteventemitter</a></li>
+            <li><a class="" href="../sync-ref/sync-globalhandlecollision.html">globalhandlecollision</a></li>
+            <li><a class="" href="../sync-ref/sync-globalhandlecreate.html">globalhandlecreate</a></li>
+            <li><a class="" href="../sync-ref/sync-globalhandledelete.html">globalhandledelete</a></li>
+            <li><a class="" href="../sync-ref/sync-globalhandlelist.html">globalhandlelist</a></li>
+            <li><a class="" href="../sync-ref/sync-globalhandleread.html">globalhandleread</a></li>
+            <li><a class="" href="../sync-ref/sync-globalhandleupdate.html">globalhandleupdate</a></li>
+            <li><a class="" href="../sync-ref/sync-globalinterceptrequest.html">globalinterceptrequest</a></li>
+            <li><a class="" href="../sync-ref/sync-globallistcollisions.html">globallistcollisions</a></li>
+            <li><a class="" href="../sync-ref/sync-globalremovecollision.html">globalremovecollision</a></li>
+            <li><a class="" href="../sync-ref/sync-handlecollision.html">handlecollision</a></li>
+            <li><a class="" href="../sync-ref/sync-handlecreate.html">handlecreate</a></li>
+            <li><a class="" href="../sync-ref/sync-handledelete.html">handledelete</a></li>
+            <li><a class="" href="../sync-ref/sync-handlelist.html">handlelist</a></li>
+            <li><a class="" href="../sync-ref/sync-handleread.html">handleread</a></li>
+            <li><a class="" href="../sync-ref/sync-handleupdate.html">handleupdate</a></li>
+            <li><a class="" href="../sync-ref/sync-init.html">init</a></li>
+            <li><a class="" href="../sync-ref/sync-interceptrequest.html">interceptrequest</a></li>
+            <li><a class="" href="../sync-ref/sync-invoke.html">invoke</a></li>
+            <li><a class="" href="../sync-ref/sync-listcollisions.html">listcollisions</a></li>
+            <li><a class="" href="../sync-ref/sync-removecollision.html">removecollision</a></li>
+            <li><a class="" href="../sync-ref/sync-setconfig.html">setconfig</a></li>
+            <li><a class="" href="../sync-ref/sync-setglobalhashfn.html">setglobalhashfn</a></li>
+            <li><a class="" href="../sync-ref/sync-setrecordhashfn.html">setrecordhashfn</a></li>
+            <li><a class="" href="../sync-ref/sync-stop.html">stop</a></li>
+            <li><a class="" href="../sync-ref/sync-stopall.html">stopall</a></li>
+            <li><a class="" href="../sync-ref/sync-toc.html">toc</a></li>
+      </ul>
+    </li>
+</ul>
+      </div>
+      <div class="col-xs-12 col-sm-9 col-md-9 main">
+        <div class="page-header">
+          <h2>Data Sync Framework</h2>
+        </div>
+        <div class="paragraph">
+<p>Unresolved directive in &lt;stdin&gt; - include::shared/attributes.adoc[]</p>
+</div>
+<h1 id="data-sync-framework" class="sect0"><a class="anchor" href="#data-sync-framework"></a>Data Sync Framework</h1>
+<div class="paragraph">
+<p>The {ProductShortName} mobile data synchronization framework includes the following features:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Allows mobile apps to use and update data offline (local cache)</p>
+</li>
+<li>
+<p>Provides a mechanism to manage bi-directional data synchronization from multiple Client Apps using the Cloud App and into back-end data stores</p>
+</li>
+<li>
+<p>Allows data updates (that is, deltas) to be distributed from the Cloud App to connected clients</p>
+</li>
+<li>
+<p>Enables data collision management from multiple updates in the cloud</p>
+</li>
+<li>
+<p>Allows {ProductShortName} Apps to seamlessly continue working when the network connection is lost, and allows them to recover when the network connection is restored.</p>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="high-level-architecture"><a class="anchor" href="#high-level-architecture"></a>High Level Architecture</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><span class="image"><img src="data:image/png;base64," alt="sync_architecture"></span></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Please refer to the Data Sync Framework Terminology defined in <a href="#sync-terminology">Sync terminology</a>.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The Sync Framework comprises a set of Client App and Node.js Cloud App APIs.</p>
+</div>
+<div class="paragraph">
+<p>The Client App does not access the back-end data directly.
+Instead, it uses the Sync Client API to Read and List the data stored on the device and send changes (Creates, Updates, and Deletes) to the Cloud App.
+Changes made to the data locally are stored in the local Sync Data Cache before being sent to the Cloud App.
+The Client App receives notifications of changes to the remote dataset from the Sync Client API.</p>
+</div>
+<div class="paragraph">
+<p>The Client App then uses the Client Sync Service to receive the changes (deltas) made to the remote dataset from the Cloud App and stores them in the Sync Data Cache. The Client App also sends Updates made locally to the Cloud App using the Client Sync Service.
+When the Client App is off-line, cached updates are flushed to local storage on the device, allowing the changes to persist in case the Client App is closed before network connection is re-established.
+The changes are pushed to the Cloud App the next time the Client App goes online.</p>
+</div>
+<div class="paragraph">
+<p>The Cloud App does not access the Back End data directly, but only through the Sync Cloud API.
+The Cloud App Uses the Sync Cloud API to receive updates from the Client App using the Client Sync Service.
+These updates are stored in the Cloud App Sync Data Cache.
+The Cloud App uses the Sync Cloud API to manage the Back End data in hosted storage using standard CRUDL (create, read, update, delete and list) and <code>collisionHandler</code> functions.</p>
+</div>
+<div class="paragraph">
+<p>In addition to the standard data handler functions, the Cloud App can also employ user-defined data access functions.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="api"><a class="anchor" href="#api"></a>API</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Client and Node.js API calls for Sync are documented in the following guides:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="{ClientAPI}#fh-sync">JavaScript SDK API</a> Sync section.</p>
+</li>
+<li>
+<p><a href="{CloudAPI}#fh-sync">Node.js API</a> Sync section.</p>
+</li>
+<li>
+<p><a href="http://feedhenry.github.io/fh-ios-sdk/FH/docset/Contents/Resources/Documents/index.html" target="_blank" rel="noopener">iOS SDK Docs</a></p>
+</li>
+<li>
+<p><a href="http://www.javadoc.io/doc/com.feedhenry/fh-android-sdk/3.2.0" target="_blank" rel="noopener">Android SDK Docs</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="basic-usage"><a class="anchor" href="#basic-usage"></a>Getting Started</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To implement the Sync framework in your App:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Init $fh.sync on the client side</p>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="javascript">  <span style="color:#777">//See [JavaScript SDK API](../api/app_api.html#app_api-_fh_sync) for the details of the APIs used here</span>
+
+  <span style="color:#080;font-weight:bold">var</span> datasetId = <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">myShoppingList</span><span style="color:#710">&quot;</span></span>;
+
+  <span style="color:#777">//provide sync init options</span>
+  <span style="color:#369;font-weight:bold">$fh</span>.sync.init({
+    <span style="color:#606"><span style="color:#404">&quot;</span><span>sync_frequency</span><span style="color:#404">&quot;</span></span>: <span style="color:#00D">10</span>,
+    <span style="color:#606"><span style="color:#404">&quot;</span><span>do_console_log</span><span style="color:#404">&quot;</span></span>: <span style="color:#069">true</span>,
+    <span style="color:#606"><span style="color:#404">&quot;</span><span>storage_strategy</span><span style="color:#404">&quot;</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">dom</span><span style="color:#710">&quot;</span></span>
+  });
+
+  <span style="color:#777">//provide listeners for notifications.</span>
+  <span style="color:#369;font-weight:bold">$fh</span>.sync.notify(<span style="color:#080;font-weight:bold">function</span>(notification){
+    <span style="color:#080;font-weight:bold">var</span> code = notification.code
+    <span style="color:#080;font-weight:bold">if</span>(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">sync_complete</span><span style="color:#710">'</span></span> === code){
+      <span style="color:#777">//a sync loop completed successfully, list the update data</span>
+      <span style="color:#369;font-weight:bold">$fh</span>.sync.doList(datasetId,
+        <span style="color:#080;font-weight:bold">function</span> (res) {
+          console.log(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Successful result from list:</span><span style="color:#710">'</span></span>, JSON.stringify(res));
+          },
+        <span style="color:#080;font-weight:bold">function</span> (err) {
+          console.log(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">Error result from list:</span><span style="color:#710">'</span></span>, JSON.stringify(err));
+        });
+    } <span style="color:#080;font-weight:bold">else</span> {
+      <span style="color:#777">//choose other notifications the app is interested in and provide callbacks</span>
+    }
+  });
+
+  <span style="color:#777">//manage the data set, repeat this if the app needs to manage multiple datasets</span>
+  <span style="color:#080;font-weight:bold">var</span> query_params = {}; <span style="color:#777">//or something like this: {&quot;eq&quot;: {&quot;field1&quot;: &quot;value&quot;}}</span>
+  <span style="color:#080;font-weight:bold">var</span> meta_data = {};
+  <span style="color:#369;font-weight:bold">$fh</span>.sync.manage(datasetId, {}, query_params, meta_data, <span style="color:#080;font-weight:bold">function</span>(){
+
+  });</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<div class="title">About Notifications</div>
+<p>The Sync framework emits different types of notifications during the sync life cycle. Depending on your app&#8217;s requirements, you can choose which type of notifications your app  listens to and add callbacks. However, it&#8217;s not mandatory, the Sync framework performs synchronization without notification listeners.</p>
+</div>
+<div class="paragraph">
+<p>Adding appropriate notification listeners helps improve the user experience of your app:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Show critical error messages to the user in situations where Sync framework errors occur. For example, <code>client_storage_failed</code>.</p>
+</li>
+<li>
+<p>Log errors and failures to the console to help debugging. For example, <code>remote_update_failed</code>, <code>sync_failed</code>.</p>
+</li>
+<li>
+<p>Update the UI related to the sync data if delta is received, for example, there are changes to the data, you can use <code>delta_received</code>, <code>record_delta_received</code>.</p>
+</li>
+<li>
+<p>Monitor for collisions.</p>
+<div class="paragraph">
+<p>Make sure to use $fh.sync APIs to perform CRUDL operations on the client.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Init $fh.sync on the cloud side</p>
+<div class="paragraph">
+<p>This step is optional, and only required if you are overriding dataset options on the server, for example, modifying the sync loop frequency with the Dataset back end.
+See the <a href="#sync-loop-considerations">Considerations</a> section below if changing the default sync frequency.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="javascript"><span style="color:#080;font-weight:bold">var</span> fhapi = require(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">fh-mbaas-api</span><span style="color:#710">&quot;</span></span>);
+<span style="color:#080;font-weight:bold">var</span> datasetId = <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">myShoppingList</span><span style="color:#710">&quot;</span></span>;
+
+<span style="color:#080;font-weight:bold">var</span> options = {
+  <span style="color:#606"><span style="color:#404">&quot;</span><span>syncFrequency</span><span style="color:#404">&quot;</span></span>: <span style="color:#00D">10</span>
+};
+
+fhapi.sync.init(datasetId, options, <span style="color:#080;font-weight:bold">function</span>(err) {
+  <span style="color:#080;font-weight:bold">if</span> (err) {
+    console.error(err);
+  } <span style="color:#080;font-weight:bold">else</span> {
+    console.log(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">sync inited</span><span style="color:#710">'</span></span>);
+  }
+});</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can now use the Sync framework in your app, or use the sample app to explore the basic usage: <a href="https://github.com/feedhenry-templates/sync-app" target="_blank" rel="noopener">Client App</a> and <a href="https://github.com/feedhenry-templates/sync-cloud" target="_blank" rel="noopener">Cloud App</a>.</p>
+</div>
+<div class="paragraph">
+<p>If the default data access implementations do not meet your requirements, you can provide override functions.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="sect2">
+<h3 id="sync-loop-considerations"><a class="anchor" href="#sync-loop-considerations"></a>Avoiding Unnecessary Sync Loops</h3>
+<div class="paragraph">
+<p>Because the client and server sync frequencies are set independently, two sync loops may be invoked per sync frequency if the server-side sync frequency differs from the client-side frequency.
+Setting a long frequency on a client does not change the sync frequency on the server.
+To avoid two sync loops, set the syncFrequency value of the dataset on the server to the sync_frequency value of the corresponding dataset on the client.</p>
+</div>
+<div class="paragraph">
+<p>For example:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>syncFrequency on the server-side dataset is set to 120 seconds.</p>
+</li>
+<li>
+<p>sync_frequency on the client-side dataset is also set to 120 seconds.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>However, if you require different frequencies on the client and server, you can set different values.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="sync-advanced-usage"><a class="anchor" href="#sync-advanced-usage"></a>Using Advanced Features of the Sync Framework</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="define-the-source-data-for-a-dataset"><a class="anchor" href="#define-the-source-data-for-a-dataset"></a>Define the Source Data for a Dataset</h3>
+<div class="paragraph">
+<p>The Sync Framework provides hooks to allow the App Developer to define the source data for a dataset. Typically, the source data is an external database (MySql, Oracle, MongoDB etc), but this is not a requirement. The source data for a dataset can be anything, for example, csv files, FTP meta data, or even data pulled from multiple database tables. The only requirement that the Sync Framework imposes is that each record in the source data has a unique Id and that the data is provided to the Sync Framework as a JSON Object.</p>
+</div>
+<div class="paragraph">
+<p>In order to synchronize with the back end data source, the App developer can implement code for synchronization.</p>
+</div>
+<div class="paragraph">
+<p>For example, when listing data from back end, instead of loading data from database, you might want to return hard coded data:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Init $fh.sync on the client side</p>
+<div class="paragraph">
+<p>This is the same as Step 1 in <a href="#basic-usage">Getting Started</a>.</p>
+</div>
+</li>
+<li>
+<p>Init $fh.sync on the cloud side and provide overrides.</p>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="javascript"><span style="color:#080;font-weight:bold">var</span> fhapi = require(<span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">fh-mbaas-api</span><span style="color:#710">&quot;</span></span>);
+<span style="color:#080;font-weight:bold">var</span> datasetId = <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">&quot;</span><span style="color:#D20">myShoppingList</span><span style="color:#710">&quot;</span></span>;
+
+<span style="color:#080;font-weight:bold">var</span> options = {
+  <span style="color:#606"><span style="color:#404">&quot;</span><span>syncFrequency</span><span style="color:#404">&quot;</span></span>: <span style="color:#00D">10</span>
+};
+
+<span style="color:#777">//provide hard coded data list</span>
+<span style="color:#080;font-weight:bold">var</span> <span style="color:#06B;font-weight:bold">datalistHandler</span> = <span style="color:#080;font-weight:bold">function</span>(dataset_id, query_params, cb, meta_data){
+  <span style="color:#080;font-weight:bold">var</span> data = {
+    <span style="color:#606"><span style="color:#404">'</span><span>00001</span><span style="color:#404">'</span></span>: {
+      <span style="color:#606"><span style="color:#404">'</span><span>item</span><span style="color:#404">'</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">item1</span><span style="color:#710">'</span></span>
+    },
+    <span style="color:#606"><span style="color:#404">'</span><span>00002</span><span style="color:#404">'</span></span>: {
+      <span style="color:#606"><span style="color:#404">'</span><span>item</span><span style="color:#404">'</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">item2</span><span style="color:#710">'</span></span>
+    },
+    <span style="color:#606"><span style="color:#404">'</span><span>00003</span><span style="color:#404">'</span></span>: {
+      <span style="color:#606"><span style="color:#404">'</span><span>item</span><span style="color:#404">'</span></span>: <span style="background-color:hsla(0,100%,50%,0.05)"><span style="color:#710">'</span><span style="color:#D20">item3</span><span style="color:#710">'</span></span>
+    }
+  }
+  <span style="color:#080;font-weight:bold">return</span> cb(<span style="color:#069">null</span>, data);
+}
+
+fhapi.sync.init(datasetId, options, <span style="color:#080;font-weight:bold">function</span>(err) {
+  <span style="color:#080;font-weight:bold">if</span> (err) {
+    console.error(err);
+  } <span style="color:#080;font-weight:bold">else</span> {
+    <span style="color:#369;font-weight:bold">$fh</span>.sync.handleList(datasetId, datalistHandler);
+  }
+});</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Check the <a href="{CloudAPI}#fh-sync">Node.js API Sync section</a> for information about how to create more overrides.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+      </div>
+    </div>
+  </div>
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <!-- Latest compiled and minified JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   <script src="../../latest/_javascripts/bootstrap-offcanvas.js" type="text/javascript"></script>
+   <script type="text/javascript">
+    /*<![CDATA[*/
+    $(document).ready(function() {
+      $("[id^='topicGroup']").on('show.bs.collapse', function (event) {
+        if (!($(event.target).attr('id').match(/^topicSubGroup/))) {
+          $(this).parent().find("[id^='tgSpan']").toggleClass("fa-angle-right fa-angle-down");
+        }
+      });
+      $("[id^='topicGroup']").on('hide.bs.collapse', function (event) {
+        if (!($(event.target).attr('id').match(/^topicSubGroup/))) {
+          $(this).parent().find("[id^='tgSpan']").toggleClass("fa-angle-right fa-angle-down");
+        }
+      });
+      $("[id^='topicSubGroup']").on('show.bs.collapse', function () {
+        $(this).parent().find("[id^='sgSpan']").toggleClass("fa-caret-right fa-caret-down");
+      });
+      $("[id^='topicSubGroup']").on('hide.bs.collapse', function () {
+        $(this).parent().find("[id^='sgSpan']").toggleClass("fa-caret-right fa-caret-down");
+      });
+    });
+    /*]]>*/
+  </script>
+</body>
+</html>

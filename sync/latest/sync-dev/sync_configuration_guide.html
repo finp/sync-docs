@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>aerogear Latest | Sync User Guide | Configuration guide</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <link href="../../latest/_stylesheets/asciibinder.css" rel="stylesheet" />
+
+   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+   <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+   <![endif]-->
+
+  <link href="../../latest/_images/favicon32x32.png" rel="shortcut icon" type="text/css">
+  <!--[if IE]><link rel="shortcut icon" href="../../latest/_images/favicon.ico"><![endif]-->
+  <meta content="Red Hat" name="application-name">
+</head>
+<body>
+  <div class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="https://aerogear.org/"><img alt="Build Farm" src="../../latest/_images/aerogear_logo_200px.png"></a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <p class="toggle-nav visible-xs pull-left">
+      <button class="btn btn-default btn-sm" type="button" data-toggle="offcanvas">Toggle nav</button>
+    </p>
+    <ol class="breadcrumb">
+      <li class="sitename">
+        <a href="../../index.html">AeroGear</a>
+      </li>
+      <li class="hidden-xs active">
+        <a href="../sync-dev/sync_overview.html">aerogear Latest</a>
+      </li>
+      <li class="hidden-xs active">
+        <a href="../sync-dev/sync_overview.html">Sync User Guide</a>
+      </li>
+      
+      <li class="hidden-xs active">
+        Configuration guide
+      </li>
+    </ol>
+    <div class="row row-offcanvas row-offcanvas-left">
+      <div class="col-xs-8 col-sm-3 col-md-3 sidebar sidebar-offcanvas">
+        <ul class="nav nav-sidebar">
+    <li class="nav-header">
+      <a class="" href="#" data-toggle="collapse" data-target="#topicGroup0">
+        <span id="tgSpan0" class="fa fa-angle-down"></span>Sync User Guide
+      </a>
+      <ul id="topicGroup0" class="collapse in list-unstyled">
+            <li><a class="" href="../sync-dev/sync_overview.html">Overview</a></li>
+            <li><a class="" href="../sync-dev/sync_terminology.html">Terminology</a></li>
+            <li><a class="" href="../sync-dev/sync_server_architecture.html">Server architecture</a></li>
+            <li><a class=" active" href="../sync-dev/sync_configuration_guide.html">Configuration guide</a></li>
+            <li><a class="" href="../sync-dev/sync_upgrade_guide.html">Upgrade guide</a></li>
+            <li><a class="" href="../sync-dev/sync_performance_scaling_guide.html">Performance guide</a></li>
+            <li><a class="" href="../sync-dev/sync_collections.html">Collections</a></li>
+            <li><a class="" href="../sync-dev/sync_debugging_guide.html">Debugging guide</a></li>
+      </ul>
+    </li>
+    <li class="nav-header">
+      <a class="" href="#" data-toggle="collapse" data-target="#topicGroup1">
+        <span id="tgSpan1" class="fa fa-angle-right"></span>Sync API Guide
+      </a>
+      <ul id="topicGroup1" class="collapse  list-unstyled">
+            <li><a class="" href="../sync-ref/sync.html">sync</a></li>
+            <li><a class="" href="../sync-ref/sync-connect.html">connect</a></li>
+            <li><a class="" href="../sync-ref/sync-geteventemitter.html">geteventemitter</a></li>
+            <li><a class="" href="../sync-ref/sync-globalhandlecollision.html">globalhandlecollision</a></li>
+            <li><a class="" href="../sync-ref/sync-globalhandlecreate.html">globalhandlecreate</a></li>
+            <li><a class="" href="../sync-ref/sync-globalhandledelete.html">globalhandledelete</a></li>
+            <li><a class="" href="../sync-ref/sync-globalhandlelist.html">globalhandlelist</a></li>
+            <li><a class="" href="../sync-ref/sync-globalhandleread.html">globalhandleread</a></li>
+            <li><a class="" href="../sync-ref/sync-globalhandleupdate.html">globalhandleupdate</a></li>
+            <li><a class="" href="../sync-ref/sync-globalinterceptrequest.html">globalinterceptrequest</a></li>
+            <li><a class="" href="../sync-ref/sync-globallistcollisions.html">globallistcollisions</a></li>
+            <li><a class="" href="../sync-ref/sync-globalremovecollision.html">globalremovecollision</a></li>
+            <li><a class="" href="../sync-ref/sync-handlecollision.html">handlecollision</a></li>
+            <li><a class="" href="../sync-ref/sync-handlecreate.html">handlecreate</a></li>
+            <li><a class="" href="../sync-ref/sync-handledelete.html">handledelete</a></li>
+            <li><a class="" href="../sync-ref/sync-handlelist.html">handlelist</a></li>
+            <li><a class="" href="../sync-ref/sync-handleread.html">handleread</a></li>
+            <li><a class="" href="../sync-ref/sync-handleupdate.html">handleupdate</a></li>
+            <li><a class="" href="../sync-ref/sync-init.html">init</a></li>
+            <li><a class="" href="../sync-ref/sync-interceptrequest.html">interceptrequest</a></li>
+            <li><a class="" href="../sync-ref/sync-invoke.html">invoke</a></li>
+            <li><a class="" href="../sync-ref/sync-listcollisions.html">listcollisions</a></li>
+            <li><a class="" href="../sync-ref/sync-removecollision.html">removecollision</a></li>
+            <li><a class="" href="../sync-ref/sync-setconfig.html">setconfig</a></li>
+            <li><a class="" href="../sync-ref/sync-setglobalhashfn.html">setglobalhashfn</a></li>
+            <li><a class="" href="../sync-ref/sync-setrecordhashfn.html">setrecordhashfn</a></li>
+            <li><a class="" href="../sync-ref/sync-stop.html">stop</a></li>
+            <li><a class="" href="../sync-ref/sync-stopall.html">stopall</a></li>
+            <li><a class="" href="../sync-ref/sync-toc.html">toc</a></li>
+      </ul>
+    </li>
+</ul>
+      </div>
+      <div class="col-xs-12 col-sm-9 col-md-9 main">
+        <div class="page-header">
+          <h2>Data Sync Configuration Guide</h2>
+        </div>
+        <div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Data Sync configuration can be applied to the client-side and also in the cloud (server-side).</p>
+</div>
+<div class="paragraph">
+<p>The sync frequency on the client-side is set using the <strong>sync_frequency</strong> variable.
+To see an example of <strong>sync_frequency</strong> being set, see the code in this <a href="#basic-usage">section</a> of the documentation.</p>
+</div>
+<div class="paragraph">
+<p>The sync frequency in the cloud is set using the <strong>syncFrequency</strong> variable.
+To see an example of <strong>syncFrequency</strong> being set, see the code in this <a href="#sync-advanced-usage">section</a> of the documentation.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="configuring-sync-frequency"><a class="anchor" href="#configuring-sync-frequency"></a>Configuring Sync Frequency</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The sync frequency is the time period the system waits between 2 sync processes.</p>
+</div>
+<div class="paragraph">
+<p><strong>IMPORTANT</strong>: It is possible to configure the frequency differently on
+the client and server. However, Red Hat recommends using the same setting to
+avoid the following scenarios:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The client calls more frequently than the server checks for
+updates from the <a href="#dataset-backend">DataSet Backend</a>, causing
+unnecessary traffic from the client.</p>
+</li>
+<li>
+<p>the client calls less frequently than the server checks for
+updates from the <a href="#dataset-backend">DataSet Backend</a>, causing the
+server to drop its <a href="#dataset">DataSet</a> from the cache because of inactivity.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The sync frequency value of a server determines how often the sync processor runs.
+Every time the sync processor executes, it performs a list operation on the Dataset Backend to synchronize the data with a local copy.
+To determine the best value of the sync frequency for your application, review the following sections.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>How quickly do you want your clients to see changes from others?</p>
+<div class="paragraph">
+<p>When a client submits changes, those changes are applied to the Dataset Backend directly. To ensure high performance, other clients get data from the local copy. This means other clients can only get the new changes after the next sync processor run. If it is required that other clients get the changes as soon as possible, then consider setting a low value for the sync frequency.</p>
+</div>
+</li>
+<li>
+<p>How long it takes the sync processor to run?</p>
+<div class="paragraph">
+<p>The sync frequency value determines how long the system waits between sync processor executions, that is, the sync frequency is the time from the completion of the one execution to the start time of next execution. This means there is never a situation where 2 sync processors are running at the same time. Therefore:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>actual sync period = sync processor execution time + the sync frequency</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This helps you calculate the number of requests the system makes to the Dataset Backend.</p>
+</div>
+<div class="paragraph">
+<p>To determine how long each sync processor execution takes, you can query the sync stats endpoint to see the average <code>Job Process Time</code> it takes for the <code>sync_worker</code> to complete.</p>
+</div>
+</li>
+<li>
+<p>How much load can the Dataset Backend service handle?</p>
+<div class="paragraph">
+<p>Every time the sync processor runs, it performs a list operation on the Dataset Backend.
+When you configure the sync frequency, you need to estimate how many requests it generates on the backend, and make sure the backend can handle the load.</p>
+</div>
+<div class="paragraph">
+<p>For example, if you set the sync frequency of a dataset to 100ms, and each sync processor execution is taking 100ms to run, that means the server generates about 5 req/sec to the backend. However, if you have another dataset with a sync frequency of 100ms that uses the same backend,  there will be about 10 req/sec to the backend. You can perform load tests against the backend to determine if the backend can handle that load.</p>
+</div>
+<div class="paragraph">
+<p>However, this value does not grow when you scale the app. For example, if you have multiple workers in your server, the sync processor executions are distributed among the workers rather than duplicated among them. This design protects the backend when the app is under heavy load.</p>
+</div>
+</li>
+<li>
+<p>How much extra load does it cause to the server?</p>
+<div class="paragraph">
+<p>When the data is returned from the backend, the server must save the data to the local storage (MongoDB). The system  only performs updates if there are changes. But it needs to perform a read operation first to get the current data in the local storage. When there are a lot of sync processor executions, it could cause extra load on the server itself. Sometimes, you need to take this into consideration, especially if the dataset is large.</p>
+</div>
+<div class="paragraph">
+<p>To understand the performance of the server, you can use the sync stats endpoint to check CPU usage, and the MongoDB operation time.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>You can use the sync frequency value to control the number of requests the server generates to the backend.
+It is acceptable to set it to 0ms, as long as the backend can handle the load, and the server itself is not over-loaded.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="configuring-the-workers"><a class="anchor" href="#configuring-the-workers"></a>Configuring the Workers</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There are different queues used to store the sync data, as described in the <a href="#sync-server-architecture">Sync Architecture</a>.
+To process the data, a corresponding worker is created for each queue.
+Its sole task is to take a job off the queue, one at a time, and process it.
+However, there is an interval value for how long between finishing one job and getting the next available job.
+To maximize the worker performance, you can configure this value.</p>
+</div>
+<div class="sect2">
+<h3 id="purpose-of-the-intervals"><a class="anchor" href="#purpose-of-the-intervals"></a>Purpose of the Intervals</h3>
+<div class="paragraph">
+<p>The request to get a job off the queue is a non-blocking operation.
+When there are no jobs left on the queue, the request returns and the worker attempts to get a job again.</p>
+</div>
+<div class="paragraph">
+<p>In this case, or if jobs are very fast to complete, a worker could overload the main event loop and slow down any other code execution.
+To prevent this scenario, there is an interval value configuration item  for each worker:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>pendingWorkerInterval</code></p>
+</li>
+<li>
+<p><code>ackWorkerInterval</code></p>
+</li>
+<li>
+<p><code>syncWorkerInterval</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The default interval value is very low (1ms), but configurable.
+This default value assumes the job is going to take some time to execute and have some non-blocking I/O operations (remote HTTP calls, DB calls, etc) which allows other operations to be completed on the main event loop.
+This low default interval allows the jobs to be processed as quickly as possible, making more efficient use of the CPU.
+When there are no jobs, a backoff mechanism is invoked to ensure the workers do not overload resources unnecessarily.</p>
+</div>
+<div class="paragraph">
+<p>If the default value is causing too many requests to the Dataset Backend, or you need to change the default interval value, you can override the configuration options for one or more worker.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="worker-backoff"><a class="anchor" href="#worker-backoff"></a>Worker Backoff</h3>
+<div class="paragraph">
+<p>When there are no jobs left on a queue, each worker has a backoff strategy.
+This prevents workers from consuming unnecessary CPU cycles and unnecessary calls to the queue.
+When new jobs are put on the queue, the worker resets the interval when it next checks the queue.</p>
+</div>
+<div class="paragraph">
+<p>You can override the behavior of each worker with the following configuration options:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>pendingWorkerBackoff</code></p>
+</li>
+<li>
+<p><code>ackWorkerBackoff</code></p>
+</li>
+<li>
+<p><code>syncWorkerBackoff</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>By default, all workers use an exponential strategy, with a max delay value.
+For example, if the min interval is set to 1ms, the worker waits 1ms after processing a job before taking another job off the queue.
+This pattern continues as long as there are items on the queue.
+If the queue empties, the interval increases exponentially (2ms, 4ms, 8ms, 16ms, &#8230;&#8203; ~16s, ~32s) until it hits the max interval (for example, 60 seconds).
+The worker then only checks the queue every 60 seconds for a job.
+If it does find a job on the queue in the future, the worker returns to checking the queue every 1ms.</p>
+</div>
+<div class="paragraph">
+<p>For more information, please refer to the <a href="{CloudAPI}#fh-sync">Sync API Doc</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="managing-collisions"><a class="anchor" href="#managing-collisions"></a>Managing Collisions</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A collision occurs when a client attempts to send an update to a record, but the client&#8217;s version of the record is out of date. Typcially, this happens when a client is off line and performs an update to a local version of a record.</p>
+</div>
+<div class="paragraph">
+<p>Use the following handlers to deal with collisions:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>handleCollision()</code> - Called by the Sync Framework when a collision occurs. The default implementation saves the data records to a collection named "&lt;dataset_id&gt;_collision".</p>
+</li>
+<li>
+<p><code>listCollision()</code> - Returns a list of data collisions. The default implementation lists all the collision records from the collection name "&lt;dataset_id&gt;_collision".</p>
+</li>
+<li>
+<p><code>removeCollision()</code> - Removes a collision record from the list of collisions. The default implementation deletes the collision records based on hash values from the collection named "&lt;dataset_id&gt;_collision".</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>You can provide the handler function overrides for dealing with data collisions. Options include:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Store the collision record for manual resolution by a data administrator at a later date.</p>
+</li>
+<li>
+<p>Discard the update which caused the collision. To achieve this, the <code>handleCollision()</code> function would simply not do anything with the collision record passed to it.</p>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+This may result in data loss as the update which caused the collision would be discarded by the Cloud App.
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Apply the update which caused the collision. To achieve this, the <code>handleCollision()</code> function would need to call the <code>handleCreate()</code> function defined for the dataset.</p>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+This may result in data loss as the update which caused the collision would be based on a stale version of the data and so may cause some fields to revert to old values.
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The native sync clients use similar interfaces. You can check the API and example codes in our <a href="https://github.com/feedhenry/fh-ios-sdk" target="_blank" rel="noopener">iOS Github repo</a> and <a href="https://github.com/feedhenry/fh-android-sdk" target="_blank" rel="noopener">Android Github repo</a>.</p>
+</div>
+</div>
+</div>
+      </div>
+    </div>
+  </div>
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <!-- Latest compiled and minified JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   <script src="../../latest/_javascripts/bootstrap-offcanvas.js" type="text/javascript"></script>
+   <script type="text/javascript">
+    /*<![CDATA[*/
+    $(document).ready(function() {
+      $("[id^='topicGroup']").on('show.bs.collapse', function (event) {
+        if (!($(event.target).attr('id').match(/^topicSubGroup/))) {
+          $(this).parent().find("[id^='tgSpan']").toggleClass("fa-angle-right fa-angle-down");
+        }
+      });
+      $("[id^='topicGroup']").on('hide.bs.collapse', function (event) {
+        if (!($(event.target).attr('id').match(/^topicSubGroup/))) {
+          $(this).parent().find("[id^='tgSpan']").toggleClass("fa-angle-right fa-angle-down");
+        }
+      });
+      $("[id^='topicSubGroup']").on('show.bs.collapse', function () {
+        $(this).parent().find("[id^='sgSpan']").toggleClass("fa-caret-right fa-caret-down");
+      });
+      $("[id^='topicSubGroup']").on('hide.bs.collapse', function () {
+        $(this).parent().find("[id^='sgSpan']").toggleClass("fa-caret-right fa-caret-down");
+      });
+    });
+    /*]]>*/
+  </script>
+</body>
+</html>

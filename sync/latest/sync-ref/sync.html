@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>aerogear Latest | Sync API Guide | sync</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <link href="../../latest/_stylesheets/asciibinder.css" rel="stylesheet" />
+
+   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+   <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+   <![endif]-->
+
+  <link href="../../latest/_images/favicon32x32.png" rel="shortcut icon" type="text/css">
+  <!--[if IE]><link rel="shortcut icon" href="../../latest/_images/favicon.ico"><![endif]-->
+  <meta content="Red Hat" name="application-name">
+</head>
+<body>
+  <div class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="https://aerogear.org/"><img alt="Build Farm" src="../../latest/_images/aerogear_logo_200px.png"></a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <p class="toggle-nav visible-xs pull-left">
+      <button class="btn btn-default btn-sm" type="button" data-toggle="offcanvas">Toggle nav</button>
+    </p>
+    <ol class="breadcrumb">
+      <li class="sitename">
+        <a href="../../index.html">AeroGear</a>
+      </li>
+      <li class="hidden-xs active">
+        <a href="../sync-dev/sync_overview.html">aerogear Latest</a>
+      </li>
+      <li class="hidden-xs active">
+        <a href="../sync-ref/sync.html">Sync API Guide</a>
+      </li>
+      
+      <li class="hidden-xs active">
+        sync
+      </li>
+    </ol>
+    <div class="row row-offcanvas row-offcanvas-left">
+      <div class="col-xs-8 col-sm-3 col-md-3 sidebar sidebar-offcanvas">
+        <ul class="nav nav-sidebar">
+    <li class="nav-header">
+      <a class="" href="#" data-toggle="collapse" data-target="#topicGroup0">
+        <span id="tgSpan0" class="fa fa-angle-right"></span>Sync User Guide
+      </a>
+      <ul id="topicGroup0" class="collapse  list-unstyled">
+            <li><a class="" href="../sync-dev/sync_overview.html">Overview</a></li>
+            <li><a class="" href="../sync-dev/sync_terminology.html">Terminology</a></li>
+            <li><a class="" href="../sync-dev/sync_server_architecture.html">Server architecture</a></li>
+            <li><a class="" href="../sync-dev/sync_configuration_guide.html">Configuration guide</a></li>
+            <li><a class="" href="../sync-dev/sync_upgrade_guide.html">Upgrade guide</a></li>
+            <li><a class="" href="../sync-dev/sync_performance_scaling_guide.html">Performance guide</a></li>
+            <li><a class="" href="../sync-dev/sync_collections.html">Collections</a></li>
+            <li><a class="" href="../sync-dev/sync_debugging_guide.html">Debugging guide</a></li>
+      </ul>
+    </li>
+    <li class="nav-header">
+      <a class="" href="#" data-toggle="collapse" data-target="#topicGroup1">
+        <span id="tgSpan1" class="fa fa-angle-down"></span>Sync API Guide
+      </a>
+      <ul id="topicGroup1" class="collapse in list-unstyled">
+            <li><a class=" active" href="../sync-ref/sync.html">sync</a></li>
+            <li><a class="" href="../sync-ref/sync-connect.html">connect</a></li>
+            <li><a class="" href="../sync-ref/sync-geteventemitter.html">geteventemitter</a></li>
+            <li><a class="" href="../sync-ref/sync-globalhandlecollision.html">globalhandlecollision</a></li>
+            <li><a class="" href="../sync-ref/sync-globalhandlecreate.html">globalhandlecreate</a></li>
+            <li><a class="" href="../sync-ref/sync-globalhandledelete.html">globalhandledelete</a></li>
+            <li><a class="" href="../sync-ref/sync-globalhandlelist.html">globalhandlelist</a></li>
+            <li><a class="" href="../sync-ref/sync-globalhandleread.html">globalhandleread</a></li>
+            <li><a class="" href="../sync-ref/sync-globalhandleupdate.html">globalhandleupdate</a></li>
+            <li><a class="" href="../sync-ref/sync-globalinterceptrequest.html">globalinterceptrequest</a></li>
+            <li><a class="" href="../sync-ref/sync-globallistcollisions.html">globallistcollisions</a></li>
+            <li><a class="" href="../sync-ref/sync-globalremovecollision.html">globalremovecollision</a></li>
+            <li><a class="" href="../sync-ref/sync-handlecollision.html">handlecollision</a></li>
+            <li><a class="" href="../sync-ref/sync-handlecreate.html">handlecreate</a></li>
+            <li><a class="" href="../sync-ref/sync-handledelete.html">handledelete</a></li>
+            <li><a class="" href="../sync-ref/sync-handlelist.html">handlelist</a></li>
+            <li><a class="" href="../sync-ref/sync-handleread.html">handleread</a></li>
+            <li><a class="" href="../sync-ref/sync-handleupdate.html">handleupdate</a></li>
+            <li><a class="" href="../sync-ref/sync-init.html">init</a></li>
+            <li><a class="" href="../sync-ref/sync-interceptrequest.html">interceptrequest</a></li>
+            <li><a class="" href="../sync-ref/sync-invoke.html">invoke</a></li>
+            <li><a class="" href="../sync-ref/sync-listcollisions.html">listcollisions</a></li>
+            <li><a class="" href="../sync-ref/sync-removecollision.html">removecollision</a></li>
+            <li><a class="" href="../sync-ref/sync-setconfig.html">setconfig</a></li>
+            <li><a class="" href="../sync-ref/sync-setglobalhashfn.html">setglobalhashfn</a></li>
+            <li><a class="" href="../sync-ref/sync-setrecordhashfn.html">setrecordhashfn</a></li>
+            <li><a class="" href="../sync-ref/sync-stop.html">stop</a></li>
+            <li><a class="" href="../sync-ref/sync-stopall.html">stopall</a></li>
+            <li><a class="" href="../sync-ref/sync-toc.html">toc</a></li>
+      </ul>
+    </li>
+</ul>
+      </div>
+      <div class="col-xs-12 col-sm-9 col-md-9 main">
+        <div class="page-header">
+          <h2>$fh.sync</h2>
+        </div>
+        <div class="paragraph">
+<p>Unresolved directive in &lt;stdin&gt; - include::shared/attributes.adoc[]</p>
+</div>
+<h1 id="fh-sync" class="sect0"><a class="anchor" href="#fh-sync"></a>$fh.sync</h1>
+<div class="paragraph">
+<p>The cloud sync framework requires handler functions to be defined which provide access to the back end data &amp; manage data collisions. These are specified in the handleXXX() functions. Each unique dataset being managed is identified by a dataset_id which must be specified as the first parameter when calling any function of the sync framework.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Default implementations of the handler functions are already provided as part of the MBaaS service. They use hosted db service to save data (via <a href="#fh-db">$fh.db</a>). If this is enough for your app, you don&#8217;t need to implement the handler functions anymore, you just need to call the init function and provide sync options.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>However, if the default implementations do not meet your app&#8217;s requirement (e.g you need to save data to somewhere else), you need to provide your own implementations of the handler functions listed below. You can provide implementations for all the CRUDL operations, or you can change the default behaviour of a particular operation by only providing an override for the corresponding handler function (e.g provide an override <code>$fh.sync.handleRead</code> function will allow you to implement your own read data logic, but keep the rest operations to still use the default MBaaS implementations).</p>
+</div>
+      </div>
+    </div>
+  </div>
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <!-- Latest compiled and minified JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   <script src="../../latest/_javascripts/bootstrap-offcanvas.js" type="text/javascript"></script>
+   <script type="text/javascript">
+    /*<![CDATA[*/
+    $(document).ready(function() {
+      $("[id^='topicGroup']").on('show.bs.collapse', function (event) {
+        if (!($(event.target).attr('id').match(/^topicSubGroup/))) {
+          $(this).parent().find("[id^='tgSpan']").toggleClass("fa-angle-right fa-angle-down");
+        }
+      });
+      $("[id^='topicGroup']").on('hide.bs.collapse', function (event) {
+        if (!($(event.target).attr('id').match(/^topicSubGroup/))) {
+          $(this).parent().find("[id^='tgSpan']").toggleClass("fa-angle-right fa-angle-down");
+        }
+      });
+      $("[id^='topicSubGroup']").on('show.bs.collapse', function () {
+        $(this).parent().find("[id^='sgSpan']").toggleClass("fa-caret-right fa-caret-down");
+      });
+      $("[id^='topicSubGroup']").on('hide.bs.collapse', function () {
+        $(this).parent().find("[id^='sgSpan']").toggleClass("fa-caret-right fa-caret-down");
+      });
+    });
+    /*]]>*/
+  </script>
+</body>
+</html>
