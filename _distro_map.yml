@@ -1,9 +1,9 @@
 ---
 sync:
   name: Sync
-  author: Aerogear
+  author: AeroGear
   site: main
-  site_name: Home
+  site_name: AeroGear
   site_url: http://aerogear.org/
   branches:
     master:
