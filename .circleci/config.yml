@@ -8,6 +8,6 @@ jobs:
     steps:
       - checkout
       - run: gem install ascii_binder
-      - run: asciibinder package
+      - run: ~/docs/scripts/deploy-ghpages.sh build
       - store_artifacts:
           path: ~/docs/_preview
